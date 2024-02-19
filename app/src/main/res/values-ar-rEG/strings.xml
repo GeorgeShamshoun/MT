@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="name">الأسم</string>
+    <string name="phone">رقم الهاتف</string>
+    <string name="email">البريد الإليكترونى</string>
+    <string name="password">كلمة المرور</string>
+    <string name="enter">دخول</string>
+    <string name="enter_default_data_to_continue">أدخل بيانات أفتراضية للمتابعة</string>
+    <string name="enter_website_name">أدخل أسم الموقع</string>
+    <string name="enter_phone_number">أدخل رقم الهاتف</string>
+    <string name="enter_your_text">أدخل النص</string>
+    <string name="height">الطول</string>
+    <string name="weight">الوزن</string>
+    <string name="media_files">ملفات الوسائط</string>
+    <string name="learn_numbers">تعليم الأرقام</string>
+    <string name="stop_watch">ساعة أيقاف</string>
+    <string name="view_picture">عرض صورة</string>
+    <string name="view_video">عرض فيديو</string>
+    <string name="open_file">فتح ملف</string>
+    <string name="add">أضافة</string>
+    <string name="enter_your_message">أدخل رسالتك</string>
+    <string name="enter_your_name">أدخل أسمك</string>
+</resources>

@@ -1,0 +1,348 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="5dp"
+    android:background="@color/grayligt"
+    tools:context=".Activity.SecondActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/txtName2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_marginBottom="30dp"
+            android:background="@drawable/back_groud_part"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="25sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:layout_marginBottom="10dp"
+            android:weightSum="10">
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/btnWeb"
+                android:layout_width="32dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:onClick="onclick"
+                app:maxImageSize="50dp"
+                android:enabled="false"
+                app:srcCompat="@android:drawable/ic_menu_rotate" />
+            <EditText
+                android:id="@+id/txtWeb"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:textSize="14sp"
+                android:textColor="@color/black"
+                android:background="@drawable/edit_text_background"
+                android:hint="@string/enter_website_name"
+                android:textColorHint="@color/darkgray"
+                android:layout_weight="5"/>
+
+            <Spinner
+                android:id="@+id/mySpinner"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:textColor="@color/black"
+                android:layout_weight="4" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:layout_marginBottom="10dp"
+            android:weightSum="10">
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/btnCall"
+                android:layout_width="32dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:onClick="onclick"
+                app:maxImageSize="50dp"
+                android:enabled="false"
+                app:srcCompat="@android:drawable/ic_menu_call" />
+
+            <EditText
+                android:id="@+id/txtCall"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="9"
+                android:layout_marginEnd="20dp"
+                android:inputType="phone"
+                android:textSize="14sp"
+                android:textColor="@color/black"
+                android:background="@drawable/edit_text_background"
+                android:hint="@string/enter_phone_number"
+                android:textColorHint="@color/darkgray"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:layout_marginBottom="10dp"
+            android:weightSum="10">
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/btnTalk"
+                android:layout_width="32dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:enabled="false"
+                android:onClick="onclick"
+                app:maxImageSize="50dp"
+                app:srcCompat="@android:drawable/ic_lock_silent_mode_off" />
+
+            <EditText
+                android:id="@+id/txtTalk"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_marginEnd="20dp"
+                android:layout_weight="9"
+                android:background="@drawable/edit_text_background"
+                android:hint="@string/enter_your_text"
+                android:textColor="@color/black"
+                android:inputType="text"
+                android:textSize="14sp"
+                android:textColorHint="@color/darkgray"/>
+
+        </LinearLayout>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:background="@color/gray"
+            android:rotationX="4"
+            app:cardBackgroundColor="@color/gray"
+            app:cardCornerRadius="20dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_marginBottom="30dp"
+                    android:gravity="center"
+                    android:text="@string/bmi_calculator"
+                    android:textColor="@color/white"
+                    android:textSize="25sp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="15dp"
+                    android:gravity="left"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_margin="5dp"
+                        android:orientation="vertical">
+
+                        <EditText
+                            android:id="@+id/txtHeight"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:autofillHints=""
+                            android:background="@drawable/edit_text_background"
+                            android:gravity="center"
+                            android:hint="@string/height"
+                            android:textColorHint="@color/darkgray"
+                            android:textColor="@color/black"
+                            android:inputType="numberDecimal"
+                            android:textSize="20sp" />
+
+                        <EditText
+                            android:id="@+id/txtWeight"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:autofillHints=""
+                            android:background="@drawable/edit_text_background"
+                            android:gravity="center"
+                            android:hint="@string/weight"
+                            android:textColorHint="@color/darkgray"
+                            android:textColor="@color/black"
+                            android:inputType="numberDecimal"
+                            android:textSize="20sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/IBMLin1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:visibility="invisible">
+
+                        <ImageView
+                            android:id="@+id/imageViewBMI"
+                            android:layout_width="70dp"
+                            android:layout_height="70dp"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginRight="20dp"
+                            android:layout_marginBottom="10dp"
+                            android:scaleType="center"
+                            app:srcCompat="@drawable/bmi1" />
+
+                        <TextView
+                            android:id="@+id/txtCalcBMIView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:textColor="@color/black"
+                            android:textSize="20sp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/IBMLin2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:visibility="invisible">
+
+                        <EditText
+                            android:id="@+id/txtCalcBMI"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginRight="20dp"
+                            android:autofillHints=""
+                            android:background="@drawable/edit_text_background"
+                            android:enabled="false"
+                            android:gravity="center"
+                            android:inputType="numberDecimal"
+                            android:textColor="@color/black"
+                            android:textSize="20sp" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+        />
+
+        <Button
+            android:id="@+id/btnMedia"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="30dp"
+            android:background="@drawable/btn1_a1"
+            android:elevation="20dp"
+            android:inputType="text"
+            android:onClick="onclick"
+            android:text="@string/media_files"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            tools:ignore="TextViewEdits" />
+
+        <Button
+            android:id="@+id/btnNumbers"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="30dp"
+            android:background="@drawable/btn1_a1"
+            android:elevation="20dp"
+            android:inputType="text"
+            android:onClick="onclick"
+            android:text="@string/learn_numbers"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            tools:ignore="TextViewEdits" />
+        <Button
+            android:id="@+id/btnRoom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="30dp"
+            android:background="@drawable/btn1_a1"
+            android:elevation="20dp"
+            android:inputType="text"
+            android:onClick="onclick"
+            android:text="@string/room_local_sqlite"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            tools:ignore="TextViewEdits" />
+        <Button
+            android:id="@+id/btnStopWatch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="30dp"
+            android:background="@drawable/btn1_a1"
+            android:elevation="20dp"
+            android:inputType="text"
+            android:onClick="onclick"
+            android:text="@string/stop_watch"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            tools:ignore="TextViewEdits" />
+        <Button
+            android:id="@+id/btnRetrofit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginBottom="50dp"
+            android:background="@drawable/btn1_a1"
+            android:elevation="20dp"
+            android:inputType="text"
+            android:onClick="onclick"
+            android:text="@string/retrofit_jeson"
+            android:visibility="visible"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            tools:ignore="TextViewEdits" />
+    </LinearLayout>
+
+
+</ScrollView>
